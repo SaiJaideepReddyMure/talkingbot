@@ -4,5 +4,6 @@ import timeapp = Flask(__name__);
 def response():
     query = dict(request.form)['query']
     res = query + " " + time.ctime()
-    return jsonify({"response" : res})if __name__=="__main__":
+    return jsonify({"response" : res})
+if __name__=="__main__":
     app.run(host="0.0.0.0",)
