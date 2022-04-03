@@ -1,5 +1,6 @@
 from flask import Flask, jsonify,request
-import timeapp = Flask(__name__);
+import time
+app = Flask(__name__);
 @app.route("/bot", methods=["POST"])
 def response():
     query = dict(request.form)['query']
